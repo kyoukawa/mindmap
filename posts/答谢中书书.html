@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/style.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.14.3"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.14.3/dist/index.umd.min.js"></script><script>(r => {
+          setTimeout(r);
+        })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root, jsonOptions) => {
+        const markmap = getMarkmap();
+        window.mm = markmap.Markmap.create('svg#mindmap', (getOptions || markmap.deriveOptions)(jsonOptions), root);
+      })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"《答谢中书书》","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"手法","children":[{"type":"list_item","depth":2,"payload":{"lines":[2,3]},"content":"山水相映"},{"type":"list_item","depth":2,"payload":{"lines":[3,4]},"content":"色彩配合"},{"type":"list_item","depth":2,"payload":{"lines":[4,5]},"content":"晨昏变化"},{"type":"list_item","depth":2,"payload":{"lines":[5,6]},"content":"动静结合"}]},{"type":"heading","depth":1,"payload":{"lines":[7,8]},"content":"行文","children":[{"type":"list_item","depth":2,"payload":{"lines":[8,9]},"content":"总","children":[{"type":"list_item","depth":3,"payload":{"lines":[9,10]},"content":"山川之美，古来共谈"}]},{"type":"list_item","depth":2,"payload":{"lines":[10,11]},"content":"分","children":[{"type":"list_item","depth":3,"payload":{"lines":[11,12]},"content":"高峰入云，清流见底","children":[{"type":"list_item","depth":4,"payload":{"lines":[12,13]},"content":"高低"},{"type":"list_item","depth":4,"payload":{"lines":[13,14]},"content":"山水"}]},{"type":"list_item","depth":3,"payload":{"lines":[14,15]},"content":"两岸石壁，五色交辉","children":[{"type":"list_item","depth":4,"payload":{"lines":[15,16]},"content":"左右"},{"type":"list_item","depth":4,"payload":{"lines":[16,17]},"content":"色彩配合"}]},{"type":"list_item","depth":3,"payload":{"lines":[17,18]},"content":"青林翠竹，四时俱备","children":[{"type":"list_item","depth":4,"payload":{"lines":[18,19]},"content":"色彩"}]},{"type":"list_item","depth":3,"payload":{"lines":[19,20]},"content":"晓雾将歇，猿鸟乱鸣;夕日欲颓，沉鳞竞跃","children":[{"type":"list_item","depth":4,"payload":{"lines":[20,21]},"content":"晨昏变化"},{"type":"list_item","depth":4,"payload":{"lines":[21,22]},"content":"动静结合"}]}]},{"type":"list_item","depth":2,"payload":{"lines":[22,23]},"content":"总","children":[{"type":"list_item","depth":3,"payload":{"lines":[23,24]},"content":"实是欲界之仙都。自康乐以来，未复有能与其奇者。","children":[{"type":"list_item","depth":4,"payload":{"lines":[24,25]},"content":"对眼前美景的喜爱"},{"type":"list_item","depth":4,"payload":{"lines":[25,26]},"content":"古今知音共享美景的得意之情"}]}]}]}]},null)</script>
+</body>
+</html>
