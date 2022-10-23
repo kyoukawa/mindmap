@@ -8,5 +8,7 @@
 
 [藤野先生](html/藤野先生.html)
 
+[物理复习](html/物理复习.html)
+
 [Alaska](html/Alaska.html)
 
